@@ -18,3 +18,16 @@ IAM is a core AWS service and is offered at no additional cost.
 * Groups: Collections of users that share the same permissions. 
 * Roles: Entities that can be assumed by trusted identities (users or applications) to grant them temporary permissions. 
 * Policies: Documents that define permissions. They specify what actions a user, group, or role is allowed to perform on which AWS resources. 
+
+## Project setup.
+
+* Headover to your AWS acount
+
+![](./img/Pasted%20image.png)
+
+* Navigate to IAM, you do so by using the search bar. Type 'iam' and enter to search.
+
+![](./img/Pasted%20image%20(2).png)
+
+
+### Create IAM Users.
