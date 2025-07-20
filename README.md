@@ -100,6 +100,24 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(17).png)
 
+### Create group for the data analyst team
+
+* On the IAM GUI console select "User group" and on the right click 'Create group'
+
+![](./img/Pasted%20image%20(14).png)
+
+* For the user group name type 'analyst-team'.
+
+![](./img/Pasted%20image%20(18).png)
+
+* On 'Attach permissions policies - Optional' search for the developers policy created earlier, check the box and click 'Create user group'.
+
+![](./img/Pasted%20image%20(19).png)
+
+* You should a success page and a list of the groups you have created.
+
+![](./img/Pasted%20image%20(20).png)
+
 * Head over to the IAM page in your AWS account if not already. You find this page by using the AWS GUI search bar as shown above. Click 'Create user' at the top right.
 
 ![](./img/Pasted%20image%20(3).png)
