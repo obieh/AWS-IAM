@@ -31,3 +31,32 @@ IAM is a core AWS service and is offered at no additional cost.
 
 
 ### Create IAM Users.
+
+#### We will create a policy, create group and associate this policy with the group(role based), then create users and add the users to the groups.The policies will be for developer and data analyst groups respectively.
+
+* On the IAM page click on 'policies' to begin creating a new policy.
+
+![](./img/Pasted%20image%20(4).png)
+
+* On the policies page, click 'create policy', top right. Search for EC2 and check 'All EC2 actions (ec2:*)'. Recall that developers will need access to EC2 instance in this case.
+
+![](./img/Pasted%20image%20(5).png)
+
+* Scroll down to 'Resources' and select 'All' radio button then click 'next'
+
+![](./img/Pasted%20image%20(6).png)
+
+* Add a policy name 'devlopers'. Add a description if you want.
+
+![](./img/Pasted%20image%20(7).png)
+
+* Scroll down the page and click 'Create policy'
+
+![](./img/Pasted%20image%20(8).png)
+
+
+
+* Head over to the IAM page in your AWS account if not already. You find this page by using the AWS GUI search bar as shown above. Click 'Create user' at the top right.
+
+![](./img/Pasted%20image%20(3).png)
+
