@@ -34,6 +34,8 @@ IAM is a core AWS service and is offered at no additional cost.
 
 #### We will create a policy, create group and associate this policy with the group(role based), then create users and add the users to the groups.The policies will be for developer and data analyst groups respectively.
 
+### Create policy for developers group.
+
 * On the IAM page click on 'policies' to begin creating a new policy.
 
 ![](./img/Pasted%20image%20(4).png)
@@ -53,6 +55,32 @@ IAM is a core AWS service and is offered at no additional cost.
 * Scroll down the page and click 'Create policy'
 
 ![](./img/Pasted%20image%20(8).png)
+
+* You should a success page as below.
+
+![](./img/Pasted%20image%20(9).png)
+
+### Create policy for data analyst group.
+
+* On the policies page click 'Create policy'
+
+![](./img/Pasted%20image%20(4).png)
+
+* Click 'Select a service' drop down and select S3 service. Check the 'All S3 action' box.
+
+![](./img/Pasted%20image%20(10).png)
+
+* Scroll down click 'All' resources button and click 'next'
+
+![](./img/Pasted%20image%20(11).png)
+
+* Add a policy name 'analyst'. Provide a description(optional) and click 'create policy'
+
+![](./img/Pasted%20image%20(12).png)
+
+* You should see a success page indicating the policy creation was a success.
+
+![](./img/Pasted%20image%20(13).png)
 
 
 
