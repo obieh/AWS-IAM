@@ -259,4 +259,27 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(56).png)
 
+* To further test mary's permission. Click the bucket mary created to upload files. You will see that the bucket is empty.
+
+![](./img/Pasted%20image%20(57).png)
+
+* Click 'upload' to begin file upload to the bucket.
+
+![](./img/Pasted%20image%20(58).png)
+
+* Choose either 'Add files' or 'Add folder' in this case 'Add file'. Navigate to the location of file to upload and select.
+
+![](./img/Pasted%20image%20(59).png)
+
+* Scroll down to the page bottom and click upload
+
+![](./img/Pasted%20image%20(60).png)
+
+* Mary can upload file into the S3 bucket as shown below.
+
+![](./img/Pasted%20image%20(61).png)
+
+
+
+
 
