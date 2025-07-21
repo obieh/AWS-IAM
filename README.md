@@ -279,6 +279,24 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(61).png)
 
+* Lets test if mary have permission to use EC2 intance service. Type Ec2 on the search bar while still logged in as Mary. 
+
+![](./img/Pasted%20image%20(62).png)
+
+* Click launch instance, towards the top right.
+
+![](./img/Pasted%20image%20(63).png)
+
+* Type a server name, select OS image and click 'Launch instance'
+
+![](./img/Pasted%20image%20(64).png)
+
+* And as expected, Mary can not launch EC2 instance as there is no permission for services like key-pair, VPC, Subnet, IP etc. These services are essential to create EC2 instance.
+
+![](./img/Pasted%20image%20(65).png)
+
+
+
 
 
 
