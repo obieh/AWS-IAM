@@ -228,3 +228,35 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(47).png)
 
+### Testing Mary's Access.
+
+* Sign-out as John, then sign-n as mary.
+
+![](./img/Pasted%20image%20(48).png)
+
+* Mary must reset password at first login. 
+
+![](./img/Pasted%20image%20(49).png)
+
+* Password reset success page pops up. Click 'continue to sign in'.
+
+![](./img/Pasted%20image%20(50).png)
+
+* As we can see on Mary's AWS-IAM account that many AWS services access are denied. Click S3 to create a buck. Recall that mary as a data analyst has been given access to S3 bucket service.
+
+![](./img/Pasted%20image%20(51).png)
+
+* Click 'Create bucket' towards the top right.
+
+![](./img/Pasted%20image%20(52).png)
+
+* Add a bucket name, scroll down and click 'Create bucket'.
+
+![](./img/Pasted%20image%20(55).png)
+![](./img/Pasted%20image%20(54).png)
+
+* Indeed, mary has full permission to S3 bucket as the bucket was created successfully.
+
+![](./img/Pasted%20image%20(56).png)
+
+
