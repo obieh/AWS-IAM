@@ -208,4 +208,23 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(39).png)
 
-* Now lets see if John has any other access.
+* Now lets see if John has any other access. Lets create S3 bucket from john's account. While in John's account, navigate to S3 AWS service.
+
+![](./img/Pasted%20image%20(43).png)
+
+* Click on 'Create bucket' at the top right of the GUI.
+
+![](./img/Pasted%20image%20(44).png)
+
+* Provide a name for the bucket(john-bucket)
+
+![](./img/Pasted%20image%20(45).png)
+
+* Scroll down and click 'Create bucket'.
+
+![](./img/Pasted%20image%20(46).png)
+
+* S3 Bucket creation failed indeed as john does not the required permission.
+
+![](./img/Pasted%20image%20(47).png)
+
