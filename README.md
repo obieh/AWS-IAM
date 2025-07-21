@@ -170,8 +170,42 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(30).png)
 
+## Testing and Validation
 
+### Testing John's Access.
 
-* Head over to the IAM page in your AWS account if not already. You find this page by using the AWS GUI search bar as shown above. Click 'Create user' at the top right.
+* Signout as root user from AWS console and sign-in as John.
 
-![](./img/Pasted%20image%20(3).png)
+![](./img/Pasted%20image%20(32).png)
+
+* John will change his password logging in for the first time.
+
+![](./img/Pasted%20image%20(33).png)
+
+* Password Reset Confirmation page comes up. Click 'continue to sign in'
+
+![](./img/Pasted%20image%20(34).png)
+
+* John's AWS IAM account already shows that some services access are denied. Recall that John as a developer has EC2 full access only.
+
+![](./img/Pasted%20image%20(35).png)
+
+* Launch EC2 instance to confirm John's access. Click EC2 or use the search bar on John's AWS account. 'Click lanch instance'
+
+![](./img/Pasted%20image%20(36).png)
+
+* Fill in required server details, name, OS image, instance type and click 'Launch instance'
+
+![](./img/Pasted%20image%20(37).png)
+
+* Success page shows like this.
+
+![](./img/Pasted%20image%20(38).png)
+
+* Go to John's EC2 dashboard or click view all instance to see details of the EC2 instance created using John's IAM account.
+
+* Indeed John has full EC2 instance access as the machine is up and running.
+
+![](./img/Pasted%20image%20(39).png)
+
+* Now lets see if John has any other access.
