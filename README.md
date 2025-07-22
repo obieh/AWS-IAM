@@ -298,6 +298,35 @@ IAM is a core AWS service and is offered at no additional cost.
 ## Multi-Factor Authentication(MFA).
 ### Multi-factor authentication (MFA) is a security method that requires users to provide more than one form of identification to access an account or system. Instead of relying solely on a username and password, MFA adds extra layers of security by incorporating additional verification steps. 
 
+### Setting Up MFA for John
+* Login as root user into your AWS management console. Click on IAM, if not found use the search bar.
+
+![](./img/Pasted%20image%20(66).png)
+
+* on the IAM page click 'Users'
+
+![](./img/Pasted%20image%20(67).png)
+
+* Click John for the list of users
+
+![](./img/Pasted%20image%20(68).png)
+
+* Click 'Enabled without MFA' in Console access to enable MFA.
+
+![](./img/Pasted%20image%20(69).png)
+
+* Click 'Enable MFA' to setup MFA for John.Add MFA device name and selector Authenticator app and click 'next'
+
+![](./img/Pasted%20image%20(71).png)
+
+* Open the authenticator app on your device and scan the QR  code. Then enter the codes from your device on the AWS MFA GUI page.
+
+![]()
+
+* You should see a success page indicating
+
+![](./img/Pasted%20image%20(72).png)
+
 
 
 
