@@ -331,14 +331,60 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ### Example:
 
-A new developer joins → Add them to the developer-team group to inherit EC2 permissions.
+* A new developer joins → Add them to the developer-team group to inherit EC2 permissions.
 
-A contractor needs temporary S3 access → Create a user with an inline policy (no group needed).
+* A contractor needs temporary S3 access → Create a user with an inline policy (no group needed).
 
+### Process of Creating Custom IAM Policies
+#### Steps to Create a Custom Policy:
 
+1. Define Purpose: Identify the role’s needs (e.g., "Read-only access to S3 buckets in Finance").
 
+2. Navigate to IAM Console: Go to Policies → Create Policy.
 
+3. Choose Service & Permissions:
+   * Select a service (e.g., S3)
+   * Specify actions (e.g., s3:GetObject, s3:ListBucket).
+   * Limit resources via ARNs (e.g., arn:aws:s3:::finance-bucket/*).
+4. Review & Name: Add a descriptive name (e.g., FinanceS3ReadOnly).
+5. Attach to Identity: Assign to a user/group/role (e.g., attach to the auditors group).
 
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": ["s3:GetObject", "s3:ListBucket"],
+    "Resource": "arn:aws:s3:::finance-bucket/*"
+  }]
+}
+```
+### Principle of Least Privilege (PoLP)
 
+#### Definition: Grant only the minimum permissions necessary to perform a task.
 
+#### Importance in AWS:
+* Reduces Attack Surface: Limits damage from compromised credentials (e.g., a hacker can’t delete all S3 buckets if the user only has read access).
+
+* Compliance: Meets regulatory requirements (e.g., GDPR, HIPAA) by restricting unnecessary data access.
+
+* Auditability: Simplifies tracking actions (e.g., CloudTrail logs show precise permissions used).
+
+#### Implementation: Start with minimal permissions and expand as needed (e.g., use AWS Access Advisor to refine policies).
+
+### Scenario Reflection: John & Mary
+
+#### Configurations:
+* John (Developer):
+   * Group: developer-team with AmazonEC2FullAccess.
+   * Alignment: Developers need to create/modify EC2 instances for app deployment. Full EC2 access aligns with their role but could be refined (e.g., restrict to specific instances).
+* Mary (Data Analyst):
+   * Group: analyst-team with AmazonS3FullAccess.
+   * Alignment: Analysts require S3 access for datasets but rarely need full control (e.g., read-only might suffice).
+
+#### Principle of Least Privilege:
+
+* John: Could be restricted to specific EC2 instances (e.g., by tagging) to prevent accidental termination of production instances.
+
+* Mary: Should have S3 permissions scoped to specific buckets (e.g., analytics-bucket) and limited to GetObject.
 
