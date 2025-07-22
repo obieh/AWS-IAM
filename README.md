@@ -319,16 +319,43 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(71).png)
 
-* Open the authenticator app on your device and scan the QR  code. Then enter the codes from your device on the AWS MFA GUI page.
+* Open the authenticator app on your device and scan the QR  code. Then enter the codes from your device on the AWS MFA GUI page, Then click 'add MFA'
 
-![]()
+![](./img/Pasted%20image%20(75).png)
 
 * You should see a success page indicating
 
 ![](./img/Pasted%20image%20(72).png)
 
+### Setting up MFA for Mary
 
+* on the IAM page click 'Users'
 
+![](./img/Pasted%20image%20(67).png)
+
+* Click Mary for the list of users
+
+![](./img/Pasted%20image%20(73).png)
+
+* Click 'Enabled without MFA' in Console access to enable MFA.
+
+![](./img/Pasted%20image%20(74).png)
+
+* Click 'Enable MFA'
+
+![](./img/Pasted%20image%20(75).png)
+
+* Add a name for the MFA device, select 'Authenticator app' and click 'next'
+
+![](./img/Pasted%20image%20(76).png)
+
+* Open the authenticator app on your device and scan the QR  code. Then enter the codes from your device on the AWS MFA GUI page, Then click 'add MFA'
+
+![](./img/Pasted%20image%20(76).png)
+
+* A success page should pop if all thinga re equal as below.
+
+![](./img/Pasted%20image%20(77).png)
 
 ## Project reflection
 
