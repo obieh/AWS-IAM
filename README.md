@@ -295,6 +295,13 @@ IAM is a core AWS service and is offered at no additional cost.
 
 ![](./img/Pasted%20image%20(65).png)
 
+## Multi-Factor Authentication(MFA).
+### Multi-factor authentication (MFA) is a security method that requires users to provide more than one form of identification to access an account or system. Instead of relying solely on a username and password, MFA adds extra layers of security by incorporating additional verification steps. 
+
+
+
+
+## Project reflection
 
 
 
